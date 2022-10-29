@@ -6,7 +6,7 @@ on:
   - push
   - pull_request
 
-env:
+jobs:
   build: # имя взято для примера
     runs-on: ubuntu-latest
 
@@ -23,4 +23,4 @@ env:
       # у шагов может быть имя, иногда это помогает отладке
       # имя выводится на Github при просмотре сборки
       - name: run tests
-        run: make tests # name и run относятся к одной задаче, поэтому дефис ставится толь
+        run: make test # name и run относятся к одной задаче, поэтому дефис ставится толь
