@@ -16,6 +16,7 @@ jobs:
       # Устанавливаем Node.js
       - uses: actions/setup-node@v1
         with:
+          node-version: 16
           cache: 'npm'
       # Ставим зависимости
       - run: make setup
